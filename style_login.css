@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.inner-box {
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 608px;
+    width: 60%;
+}
+
+.inner-box h1,p {
+  color: aliceblue;
+  text-shadow: 1px 2px 2px rgb(255, 153, 153);
+  padding-top: 5px;
+}
+
+.inner-box h1 {
+  padding-top: 15vh;
+  font-size: 70px;
+  padding-left: 4rem;
+}
+
+.inner-box p {   
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 17px;
+}
+
+.second-box {
+    width: 40%;
+}
+
+.login {
+  padding-top: 6rem;
+}
+
+.text {
+  padding-left: 12px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ffd587;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  background-color: #fd6f68;
+}
+
+.container {
+  padding: 16px;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+  float: right;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+  
+#logintext {
+  color: black;
+  text-shadow: none;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+footer a,p {
+  font-size: small;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-basic { /*styling footer*/
+  padding:3px 0; /*it give the element space*/
+  background-color:DarkSalmon; /*background color of footer*/
+  color:DarkSalmon; /*colors element to it assigned*/
+}
+
+.footer-basic .social { /*styles the socials*/
+  text-align:center; /*ext is centered in page**/
+  padding-bottom:5px; /*it give the element space*/
+}
+
+.footer-basic .social > a { /*styles socials link sprites*/
+  font-size:24px; /*changes font size*/
+  width:40px; /*width of element*/
+  height:40px; /*height element*/
+  line-height:40px; /*set the distance between lines of text*/
+  display:inline-block; /*list items horizontally instead of vertically*/
+  text-align:center; /*text is centered in page**/
+  border-radius:50%; /*makes it rounded*/
+  border:1px solid #ccc; /*add border*/
+  margin:0 8px; /*element is given more space*/
+  color:inherit; /*inherits parent element color*/
+  opacity:0.75; /*changes opacity of element lighter*/
+}
+
+#fb {
+	background:url("images/imgsprite.jpg") no-repeat -463px -678px; 
+	transform: scale(0.5);
+	width: 121px;
+	height: 122px;
+}
+
+#googs {
+	background:url("images/imgsprite.jpg") no-repeat -463px -52px; 
+	transform: scale(0.5);
+	width: 121px;
+	height: 122px;
+}
+
+#snap {
+	background:url("images/imgsprite.jpg") no-repeat -40px -680px; 
+	transform: scale(0.5);
+	width: 121px;
+	height: 122px;
+}
+
+#inst {
+	background:url("images/imgsprite.jpg") no-repeat -40px -51px; 
+	transform: scale(0.5);
+	width: 121px;
+	height: 122px;
+}
+
+.footer-basic .social > a:hover { /*footer image sprite style when cursor on it*/
+  opacity:10; /*opacity when */ 
+}
